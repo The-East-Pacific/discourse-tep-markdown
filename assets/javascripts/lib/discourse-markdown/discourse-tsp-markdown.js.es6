@@ -34,12 +34,12 @@ function setupMarkdownIt(md) {
          endToken.nesting = -1;
       }
    });
-   inline_ruler.push('bill-add', {
-      tag: 'bill-add',
+   inline_ruler.push('add', {
+      tag: 'add',
       wrap: 'span.markdown-bill-add'
    });
-   inline_ruler.push('bill-remove', {
-      tag: 'bill-add',
+   inline_ruler.push('remove', {
+      tag: 'remove',
       wrap: 'span.markdown-bill-remove'
    });
    block_ruler.push('bill', {
@@ -50,10 +50,10 @@ function setupMarkdownIt(md) {
       tag: 'box',
       wrap: 'div.markdown-block'
    });
-   block_ruler.push('background-block', {
-      tag: 'background-block',
+   block_ruler.push('bgblock', {
+      tag: 'bgblock',
       wrap: function(token, tagInfo) {
-         token.attrs = [['style', tagInfo.attrs['_default']]];
+         token.attrs = [['style', 'background-color: ' + tagInfo.attrs['_default']]];
          return true;
       }
    });
@@ -69,8 +69,16 @@ export function setup(helper) {
       'div.markdown-box',
       'div.markdown-bill',
       'span.markdown-bill-add',
-      'span.markdown-bill-remove'
+      'span.markdown-bill-remove',
+      'div[style=*]',
+      'tr[align=*]',
+      'td[align=*]',
+      'th[align=*]',
+      'tr[rowspan=*]',
+      'td[colspan=*]',
+      'th[colspan=*]',
+      'th[rowspan=*]',
+      'table[style=*]'
    ]);
-
    helper.registerPlugin(setupMarkdownIt);
 }
