@@ -72,13 +72,17 @@ export function setup(helper) {
       'span.markdown-bill-remove',
       'div[style=*]',
       'tr[align=*]',
+      'tr[style=*]',
       'td[align=*]',
+      'td[style=*]',
       'th[align=*]',
+      'th[style=*]',
       'tr[rowspan=*]',
       'td[colspan=*]',
       'th[colspan=*]',
       'th[rowspan=*]',
-      'table[style=*]'
+      'table[style=*]',
+      'span[style=*]'
    ]);
    helper.registerPlugin(setupMarkdownIt);
 }
