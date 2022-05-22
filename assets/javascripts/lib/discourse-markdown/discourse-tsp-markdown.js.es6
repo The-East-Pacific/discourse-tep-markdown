@@ -66,7 +66,7 @@ export function setup(helper) {
    });
 
    helper.allowList([
-      'div.markdown-box',
+      'div.markdown-block',
       'div.markdown-bill',
       'span.markdown-bill-add',
       'span.markdown-bill-remove',
