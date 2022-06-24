@@ -61,8 +61,8 @@ function setupMarkdownIt(md) {
 export function setup(helper) {
    if(!helper.markdownIt) { return; }
 
-   helper.registerOptions((opts,siteSettings)=>{
-      opts.features.['discourse-tsp-markdown'] = true;
+   helper.registerOptions((opts)=>{
+      opts.features['discourse-tsp-markdown'] = true;
    });
 
    helper.allowList([
