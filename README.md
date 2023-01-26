@@ -1,1 +1,1 @@
-Custom markdown for The South Pacific, ported from MyBB myCode.
+Custom markdown for The East Pacific, ported from MyBB myCode, forked from The South Pacific
