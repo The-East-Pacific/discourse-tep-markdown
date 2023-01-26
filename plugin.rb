@@ -1,5 +1,5 @@
-# name: discourse-tsp-markdown
-# about: Custom Markdown extension for The South Pacific
+# name: discourse-tep-markdown
+# about: Custom Markdown extension for The East Pacific
 # version: 0.0.1
-# authors: Dylan Henrich
+# authors: CyberiumShadow (TEP), Dylan Henrich (TSP - Upstream Fork)
 
