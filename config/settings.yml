@@ -1,4 +1,4 @@
 plugins:
-  tspmarkdown_enabled:
+  tepmarkdown_enabled:
     default: true
     client: true
