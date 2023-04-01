@@ -62,7 +62,7 @@ export function setup(helper) {
    if(!helper.markdownIt) { return; }
 
    helper.registerOptions((opts)=>{
-      opts.features['discourse-tsp-markdown'] = true;
+      opts.features['discourse-tep-markdown'] = true;
    });
 
    helper.allowList([
