@@ -3,3 +3,4 @@
 # version: 0.0.1
 # authors: Dylan Henrich
 
+register_asset "stylesheets/common/bills.scss"
