@@ -57,6 +57,14 @@ function setupMarkdownIt(md) {
          return true;
       }
    });
+   block_ruler.push("add", {
+      tag: "add",
+      wrap: "div.markdown-bill-add",
+   });
+   block_ruler.push("remove", {
+      tag: "remove",
+      wrap: "div.markdown-bill-remove",
+    });
 }
 export function setup(helper) {
    if(!helper.markdownIt) { return; }
@@ -70,6 +78,8 @@ export function setup(helper) {
       'div.markdown-bill',
       'span.markdown-bill-add',
       'span.markdown-bill-remove',
+      'div.markdown-bill-add',
+      'div.markdown-bill-remove',
       'div[style=*]',
       'tr[align=*]',
       'tr[style=*]',
